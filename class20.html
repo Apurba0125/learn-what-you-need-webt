@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurba Sarkar--- position of the element</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: rgb(240, 172, 136);
+            height: 3000px;
+
+        }
+
+        /* css position :- 1.static(default)  2.relative 2.absolute 4.fixed 5.sticky */
+        /* relative:- position the element relative to it's normal position  and it will leave a gap at it's own nornal position*/
+        /* absolute:-position the element relative to the position of it's main parent */
+        /* fixed:- position the element relative to the browser window */
+        /* sticky:- position  the element relative o the user scroll position */
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+
+        #box3 {
+            /* relative position; */
+            /* position: relative;
+            top: 35px;
+            left: 100px; */
+
+            /* absolute  position */
+            /* position: absolute; 
+            top: 35px;
+            left: 0px;  */
+
+            /* fixed position */
+            /* position: fixed;
+            right: 4px;
+            bottom: 2px; */
+
+
+            /* sticky position */
+            position: sticky;
+            top: 3px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>
