@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=A, initial-scale=1.0">
+    <title>Apurba sarkar---flex box</title>
+    <style>
+        .contanier{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* flex:-flexible+box */
+            display: flex;
+            /* flex property for a flex container  */
+            /* flex-direction: row; (by default value) */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* short hand formula */
+            /* flex-flow: row-reverse wrap; */
+
+            /* horizontal direction */
+            /* justify-content: center; */
+           /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly;  */
+
+            /* vertical direction */
+            /* align-items: center; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: stretch; */
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: darkorange;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-1{
+            /* higher order ,later show itself */
+            /* order: 2; */
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+            /* flex-basis:160px ; */
+            /* short hand formula */
+            flex: 2 2 220px;
+
+        }
+        #item-2{  
+            flex-grow: 3;
+            /* flex-shrink: 3; */
+        }
+        #item-3{
+            /* order: 10; */
+            align-items: flex-start; /* (by default value)  */
+            align-self: center;
+            align-self: flex-end;
+        }
+        </style>
+</head>
+<body>
+    <h1>this is the flex box tutorial</h1>
+    <div class="contanier">
+        <!-- div.item#item-$ -->
+        <div class="item" id="item-1">frist box</div>
+        <div class="item" id="item-2">second box</div>
+        <div class="item" id="item-3">third box</div>
+        <!-- <div class="item" id="item-4">four box</div>
+        <div class="item" id="item-5">five box</div>
+        <div class="item" id="item-6">six box</div> -->
+    </div>
+</body>
+</html>
