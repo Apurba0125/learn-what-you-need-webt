@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurba Sarkar ---own frist website using html and css</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            /* background-color: rgb(235, 16, 16); */
+            color: white;
+            font-family: cursive;
+        }
+        header::before{
+            background: url('https://picsum.photos/1600/900') no-repeat center  center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1; 
+            opacity: .5; 
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 2px 2px;
+            margin: auto;
+        }
+        section{
+            height: 350px;
+            margin: 60px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            font-size: 2rem;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        /* use case of after and before selector */
+
+        /* section::after{
+            content: "this is a sentence";
+        }
+        section::before{
+            content: "this is a sentence";
+        } */
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">HOME</li>
+                <li class="item">ABOUT</li>
+                <li class="item">SERVICES</li>
+                <li class="item">CONTRACT US</li>
+            </ul> 
+        </nav>
+    </header>
+    <section>
+        <h1>welcome to the As development class</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quaerat vitae, natus ad consectetur reprehenderit odit sequi ratione. Ducimus porro, non vitae debitis officiis, saepe omnis praesentium in facilis facere beatae eum alias? Vero, explicabo.</p>
+    </section>
+</body>
+</html>
