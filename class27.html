@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurba Sarkar ---- css variable</title>
+    <style>
+        :root{
+            --primary-color:blue;
+            --confution-color:red;
+        }
+        .conta{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary-color);
+
+        }
+        .box{
+            border: 2px solid rgb(72, 0, 255);
+            width: 200px;
+            height: 200px;
+            /* background-color: blue; */
+            background-color: var(--confution-color);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conta">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
