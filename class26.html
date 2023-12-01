@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurba Sarkar ---- box-shadow and text-shadow </title>
+    <style>
+        .contanier{
+            display: flex;
+        }
+        .card{
+            margin: 20px 12px;
+            padding: 20px 12px;
+            background-color: burlywood;
+            border: 2px solid black;
+
+            /* box-shadow:offsite-x offsite-y color */
+            /* box-shadow: 10px 12px green; */
+            /* opposite side */
+            /* box-shadow: -10px -12px green; */
+
+             /* box-shadow:offsite-x offsite-y blur-radius color */
+             /* box-shadow: 10px 12px 10px rgb(0, 255, 170); */
+             /* box-shadow: -10px -12px 10px rgb(0, 255, 170); */
+
+              /* box-shadow:offsite-x offsite-y blur-radius spread-radius color */
+               /* box-shadow: 10px 12px 5px 20px  rgb(0, 255, 170); */
+               /* box-shadow: -10px -12px 5px 20px  rgb(0, 255, 170); */
+
+
+               /* if we want to implement the box shadow inside the box */
+               /* box-shadow: inset 3px 2px green; */
+
+               /* multi-color box shadow */
+               /* box-shadow: 9px 10px green, 15px 17px red; */
+        }
+        .card h2{
+            /* text-shadow: 2px 3px white; */
+            text-shadow: 2px 3px  5px white;
+            /* text-shadow: -2px -3px  5px rgb(18, 165, 194); */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanier">
+        <div class="card" id="card-1">
+            <h2>HTML</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore itaque iste cumque repellat, fugiat
+                expedita illum voluptatibus delectus fuga perferendis. Quo vitae accusamus vel delectus modi, ipsum
+                minus architecto voluptas, ab, animi perspiciatis quos perferendis?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>CSS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore itaque iste cumque repellat, fugiat
+                expedita illum voluptatibus delectus fuga perferendis. Quo vitae accusamus vel delectus modi, ipsum
+                minus architecto voluptas, ab, animi perspiciatis quos perferendis?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>JAVASCRIPT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore itaque iste cumque repellat, fugiat
+                expedita illum voluptatibus delectus fuga perferendis. Quo vitae accusamus vel delectus modi, ipsum
+                minus architecto voluptas, ab, animi perspiciatis quos perferendis?</p>
+        </div>
+    </div>
+</body>
+
+</html>
