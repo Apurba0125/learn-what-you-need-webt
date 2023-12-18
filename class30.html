@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurba Sarkar---transition</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #box{
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+            /* transition-property: background-color;
+            transition-duration: 5s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 5s; */
+            /* short hand */
+            /* transition: background-color 1s ease-in-out 5s; */
+            /* using all property */
+            transition: all 3s ease-in-out 1s;
+
+        }
+        #box:hover{
+            background-color: green;
+            height: 400px;
+            width: 400px;
+            border-radius: 100px;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="color: white;">This is the css transition tutorial</h3>
+    <div class="container">
+        <div id="box">
+            this is my box
+        </div>
+    </div>
+</body>
+</html>
