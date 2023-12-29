@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurba Sarkar --- spanning multiple rows and columns</title>
+    <style>
+        .box{
+            background-color: rgb(145, 38, 138);
+            border: 2px solid rgb(144, 141, 217);
+            padding: 20px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(4,1fr);
+            grid-gap: 1rem;
+        }
+        .box:first-child{
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">this is box--1</div>
+        <div class="box">this is box--1</div>
+        <div class="box">this is box--1</div>
+        <div class="box">this is box--1</div>
+        <div class="box">this is box--1</div>
+        <div class="box">this is box--1</div>
+        <div class="box">this is box--1</div>
+        <div class="box">this is box--1</div>
+        <div class="box">this is box--1</div>
+        <div class="box">this is box--1</div>
+        <div class="box">this is box--1</div>
+        <div class="box">this is box--1</div>
+    </div>
+</body>
+</html>
