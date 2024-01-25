@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurba Sarkar -- template</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar''section section aside aside''footer footer footer footer';
+            
+        }
+
+        .item {
+            background-color: yellow;
+            border: 3px solid black;
+            padding: 12px 25px;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        #footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            <pre> HOME        ABOUT US          CONTACT US </pre>
+        </div>
+
+        <div id="section" class="item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ipsam cupiditate laboriosam? Repudiandae, non
+            nostrum natus corrupti officia aut aliquam recusandae. Accusantium perferendis doloremque eligendi vero.
+            Iusto eaque est, quasi temporibus dolorum, suscipit ut unde corporis a vero architecto minima? Nam
+            dignissimos, fuga ea, impedit numquam laborum exercitationem sed autem neque consequatur natus nihil,
+            veritatis minus adipisci aspernatur fugiat eaque cupiditate assumenda eos ipsam et! Ab odit vitae iusto,
+            natus, officia molestiae quos nulla omnis excepturi quibusdam sed quia minima fuga asperiores illum
+            cupiditate! Rerum, quaerat corrupti! Hic at eius tempore minus consectetur, veritatis laborum cum
+            repudiandae temporibus vero illum!
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut modi, sit quasi animi fuga corporis quos expedita excepturi sint eos quisquam enim totam minima repellendus assumenda omnis quidem quas maiores tempore laboriosam sed corrupti necessitatibus ab? Quae explicabo rerum eaque quisquam culpa hic ullam autem ipsum modi atque, labore nam.
+        </div>
+        <div  id="footer" class="item">
+           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro reiciendis optio maiores consequatur numquam! Blanditiis inventore fuga perferendis quasi aspernatur!
+        </div>
+    </div>
+</body>
+
+</html>
